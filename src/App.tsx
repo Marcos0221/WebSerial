@@ -44,11 +44,11 @@ function App() {
               horizontal: "left",
             }}
           >
-            <MenuItem>
+            <MenuItem onClick={() => window.open("https://github.com/moieo/WebSerial")}>
               <GitHubIcon sx={{ pr: 0.8 }} />
               GitHub
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={() => window.open("https://moieo.cn")}>
               <InfoIcon sx={{ pr: 0.8 }} />
               关于
             </MenuItem>
