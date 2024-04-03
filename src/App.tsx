@@ -1,5 +1,5 @@
 import "./App.css";
-import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography, Unstable_Grid2 as Grid } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -56,12 +56,15 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <Box sx={{ width: "300px", p: 2 }}>
-        <SerialLeft></SerialLeft>
-      </Box>
-
       <Box sx={{ p: 2 }}>
-        <SendView />
+        <Grid container spacing={2}>
+          <Grid lg={3} md={3} width={"100%"}>
+            <SerialLeft></SerialLeft>
+          </Grid>
+          <Grid lg={9} md={9} width={"100%"}>
+            <SendView />
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
