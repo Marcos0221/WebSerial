@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import SerialLeft from "./serial/SerialLeft";
 import InfoIcon from "@mui/icons-material/Info";
 import { useState } from "react";
+import SendView from "./serial/SendView";
 
 function App() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -57,6 +58,10 @@ function App() {
 
       <Box sx={{ width: "300px", p: 2 }}>
         <SerialLeft></SerialLeft>
+      </Box>
+
+      <Box sx={{ p: 2 }}>
+        <SendView />
       </Box>
     </Box>
   );
