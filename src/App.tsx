@@ -2,6 +2,7 @@ import "./App.css";
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import SerialLeft from "./serial/SerialLeft";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           </IconButton>
         </Toolbar>
       </AppBar>
+
+      <Box sx={{ width: "300px", p: 2 }}>
+        <SerialLeft></SerialLeft>
+      </Box>
     </Box>
   );
 }
