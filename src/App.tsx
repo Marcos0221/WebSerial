@@ -58,10 +58,10 @@ function App() {
 
       <Box sx={{ p: 2 }}>
         <Grid container spacing={2}>
-          <Grid lg={3} md={3} width={"100%"}>
+          <Grid lg={2.8} md={3} width={"100%"}>
             <SerialLeft></SerialLeft>
           </Grid>
-          <Grid lg={9} md={9} width={"100%"}>
+          <Grid lg={9.2} md={9} width={"100%"}>
             <SendView />
           </Grid>
         </Grid>
