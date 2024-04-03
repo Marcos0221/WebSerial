@@ -1,4 +1,4 @@
-module.exports = {
+const language = {
     "Simplified Chinese": "Simplified Chinese",
     "Traditional Chinese": "Traditional Chinese",
     "English": "English",
@@ -7,6 +7,11 @@ module.exports = {
     "StopBits": "StopBits",
     "Parity": "Parity",   
     "HardwareFlowControl": "HardwareFlowControl",
-    "Cache": "Cache",
-    "Options": "Options"
+    "Cache": "Buffer",
+    "Options": "Options",
+    "Choose Usart": "Cho Usart",
+    "Open Usart": "Open Usart",
+    "Usart is not open": "Usart is not open",
 }
+
+export default language;
