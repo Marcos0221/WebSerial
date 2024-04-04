@@ -5,8 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Test from "./Test";
+import i18n from "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+i18n.changeLanguage('zh');
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
