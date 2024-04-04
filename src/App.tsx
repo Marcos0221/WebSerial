@@ -5,10 +5,17 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SerialLeft from "./serial/SerialLeft";
 import InfoIcon from "@mui/icons-material/Info";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SendView from "./serial/SendView";
+import { useTranslation } from "react-i18next";
+import Test from "./Test";
 
-function App() {
+function App() {  
+  const { t } = useTranslation();
+  useEffect(()=>{
+    document.title=t('title');
+  });
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -63,6 +70,9 @@ function App() {
           </Grid>
           <Grid lg={9.2} md={9} width={"100%"}>
             <SendView />
+          </Grid>
+          <Grid lg={3.7} md={9} width={"100%"}>
+            <Test />
           </Grid>
         </Grid>
       </Box>

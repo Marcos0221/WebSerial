@@ -12,6 +12,9 @@ const language = {
     Choose_Usart: "选择串口",
     Open_Usart: "打开串口",
     Usart_is_not_open: "串口未打开",
+    title: "WebSerial - 适用于浏览器的串口调试助手",
+    Send: "发送",
+    SendMsg: "发送消息",
 }
 
 export default language;
